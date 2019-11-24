@@ -1,0 +1,23 @@
+{
+  "name": "events-lab",
+  "version": "1.0.0",
+  "description": "Events Lab",
+  "main": "app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "jest --verbose --coverage",
+    "lint": "eslint ./src/**/*.js --fix",
+    "jsdoc": "jsdoc -c ./docs/config/jsdoc.config.json",
+    "start:db": "mkdir -p ./db && mongod --dbpath ./db",
+    "watch": "nodemon index.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^24.8.0",
+    "eslint": "^6.5.1",
+    "lint": "^0.7.0",
+    "sinon": "^7.5.0",
+    "socket.io": "^2.3.0"
+  }
+}
